@@ -1,0 +1,147 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #23252C;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* container styles */
+
+.container {
+  max-width: 320px;
+  border-radius: 1em;
+  background-color: #1A1B21;
+  box-shadow: 2px 2px 10px 5px rgba(26, 27, 33, 0.5);
+}
+
+/* header styles */
+
+.header {
+  text-align: center;
+}
+
+.header > img{
+  width: 100%;
+  border-radius: 1em 1em 0 0;
+}
+
+.header--name {
+  font-size: 1.5625rem;
+  margin-bottom: 0;
+}
+
+.header--job_title {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #F3BF99;
+  margin-top: 0;
+}
+
+.header--website {
+  font-size: 0.64rem;
+}
+
+.header--btn_container {
+  margin: 1.5em 0 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  width: 115px;
+  padding: 0.4em 0.8125em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #374151;
+}
+
+.btn-dark {
+  background-color: #5093E2;
+  color: #ffffff;
+}
+
+.header--btn_icon {
+  margin-right: 0.3em;
+}
+
+/* main content styling */
+
+.main {
+  margin: 0 2.1875em 2.8em;
+}
+
+.main--section > h3 {
+  font-size: 1rem;
+  color: #F5F5F5;
+  margin: 0.875em 0 0.3125em;
+}
+
+.main--section > p {
+  font-size: 0.725rem;
+  line-height: 1.45;
+  letter-spacing: 0.1px;
+  color: #DCDCDC;
+  margin: 0;
+}
+
+.footer {
+  padding-inline: 2.5em;
+  background-color: #161619;
+  border-radius: 0 0 1em 1em;
+}
+
+.footer--socials {
+  padding: 1.4em 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer--social_icon {
+  height: 30px;
+  color: #918E9B;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
